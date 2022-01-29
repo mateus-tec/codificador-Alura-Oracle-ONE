@@ -1,0 +1,160 @@
+:ROOT{
+  /*color*/
+  --hue: 120;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 100% 50%);
+  /* font*/
+  --text:'Press Start 2P', cursive; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+
+body {
+  background-image: url(img/green-back.jpg);
+  background-size: cover;
+  background-position: center center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+header{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.box {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  width: 30vw;
+  border: var(--base-color) solid;
+  height: auto;
+  position: relative;
+  background-color: var(--base-color);
+  border-radius: 10px 10px 2px 2px;
+  text-align: center;
+}
+
+.btn {
+  color: var(--base-color);
+  font-weight: bold;
+  background-color: black ;
+  padding: 7px;
+  border: black  3px solid;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.botao{
+  padding: 7px 20px;
+}
+
+.text-input {
+  background-color: rgb(0, 0, 0);
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  height: 380px;
+  color: var(--base-color);
+  margin-top: 10px;
+  resize: none;
+  border: var(--base-color) solid ;
+  font-size: 20px;
+  outline: 0;
+  text-shadow: 0 0 0.2em
+}
+.input-text{
+  font-family: 'Special Elite', cursive;
+  font-size:20px;
+  color: black;
+  align-items: center;
+  
+}
+
+.msg{
+  display: none;
+  height: 20rem;
+  
+}
+
+.form{
+  height: 30rem;
+
+}
+
+
+
+/*Animação do titulo*/
+.titulo {
+  margin-top: 2px;
+  font-size: 30px;
+  height: 70px;
+  width: 360px;
+  position: relative;
+  margin:  auto ;
+  padding-top: 5px;
+}
+.titulo::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  padding-top: 20px;
+  white-space: nowrap;
+  font-weight: 100;
+  height: 50px;
+  color: #22ff00;
+  font-family: var(--text);
+  text-shadow: 0 0 0.2em;
+  overflow:hidden ;
+  animation: tipeo 0.7s steps(12) forwards;
+}
+
+@keyframes tilt{
+  50% {
+    opacity: 1;
+  }
+}
+
+/*animação do cursor*/
+
+.titulo::after{
+  content: "";
+  position: absolute;
+  left: 102%;
+  top: 68%;
+  transform: translateY(-100%);
+  width: 3px;
+  height: 42%;
+  background-color: #22ff00;
+  animation: tilt 1s step-start infinite;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
+@keyframes tipeo{
+  from{
+    left: 0px;
+  }
+  to{
+    width: 360px;
+    ;
+  }
+}
+
+/*erro*/ 
+.fundo{
+  background-color: black;
+}
+
