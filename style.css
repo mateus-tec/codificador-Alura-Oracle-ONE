@@ -15,7 +15,7 @@
 }
 
 body {
-  background-image: url(img/green-back.jpg);
+  background-image: url(img/U1c.gif);
   background-size: cover;
   background-position: center center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -83,8 +83,6 @@ header{
 
 .msg{
   display: none;
-  height: 20rem;
-  
 }
 
 .form{
