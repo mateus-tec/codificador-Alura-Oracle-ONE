@@ -19,6 +19,7 @@ body {
   background-size: cover;
   background-position: center center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
 }
 
 .main {
@@ -30,12 +31,12 @@ body {
 
 header{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 5px;
 }
 
 .box {
   padding: 10px;
-  margin: 0 10px 0 10px;
+  margin: 0 5px 0 5px;
   width: 30vw;
   border: var(--base-color) solid;
   height: auto;
@@ -89,6 +90,40 @@ header{
   height: 30rem;
 
 }
+
+.footer p{
+  text-align: center;
+  color: var(--base-color);
+  font-family: var(--text);
+  margin: 15px auto;
+  font-size: 10px;
+  
+}
+
+.footer img{
+  height: 25px;
+  width: 25px;
+}
+.footer{
+  text-align: center;
+}
+.rede-social a,span{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--base-color);
+  font-family: var(--text);
+  font-size: 9px;
+  
+}
+span{
+  margin-top: 10px;
+}
+
+
+
+
+
 
 
 
