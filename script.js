@@ -38,7 +38,7 @@ function criptografia(texto) {
   let textoCriptografado = texto.value
     .replace(/[e\é\è\ê]/gi, "enter")
     .replace(/[i\í\ì]/gi, "imes")
-    .replace(/[a\á\à\â\ã]/gi, "ai")
+    .replace(/[a\á\à\â\ã]/gi, "aiy")
     .replace(/[o\ó\ò\ô\õ]/gi, "ober")
     .replace(/[u\ú\ù]/gi, "ufat")
     .toLowerCase();
@@ -76,7 +76,7 @@ function descriptografia(texto) {
   let textoDescriptografado = texto.value
     .replace(/enter/gi, "e")
     .replace(/imes/gi, "i")
-    .replace(/ai/gi, "a")
+    .replace(/aiy/gi, "a")
     .replace(/ober/gi, "o")
     .replace(/ufat/gi, "u")
     .toLowerCase();
@@ -95,7 +95,7 @@ function copiar() {
 
 // verificação
 
-let palavraChave = ["enter", "imes", "ai", "ober", "ufat"];
+let palavraChave = ["enter", "imes", "aiy", "ober", "ufat"];
 
 function verificarTextCriptografado(textoDigitado) {
   //let textoDigitado = document.querySelector("#msg-cript").value;
